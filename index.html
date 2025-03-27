@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Details and Comparison</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .car-card {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .car {
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: 280px;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .car img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .car h3 {
+            color: #333;
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .car p {
+            font-size: 16px;
+            color: #666;
+            margin: 10px 0;
+        }
+        .comparison-table {
+            width: 80%;
+            margin: 40px auto;
+            border-collapse: collapse;
+            border: 1px solid #ccc;
+        }
+        .comparison-table th, .comparison-table td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+        .comparison-table th {
+            background-color: #333;
+            color: white;
+        }
+        .comparison-table td {
+            background-color: #f9f9f9;
+        }
+        .comparison-table tr:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Car Details & Comparison</h1>
+    </header>
+
+    <div class="car-card">
+        <div class="car">
+            <img src="chevy-cruze.jpg" alt="Chevy Cruze">
+            <h3>Chevy Cruze</h3>
+            <p>The Chevrolet Cruze is a compact sedan with a stylish design, great fuel economy, and a comfortable ride.</p>
+        </div>
+        <div class="car">
+            <img src="tata-safari.jpg" alt="Tata Safari">
+            <h3>Tata Safari</h3>
+            <p>The Tata Safari is a rugged SUV with a commanding presence, ideal for both urban and off-road adventures.</p>
+        </div>
+        <div class="car">
+            <img src="tata-storme.jpg" alt="Tata Storme">
+            <h3>Tata Storme</h3>
+            <p>The Tata Storme is a powerful SUV with ample space, providing comfort and luxury for large families.</p>
+        </div>
+    </div>
+
+    <div class="car-card">
+        <div class="car">
+            <img src="tata-hexa.jpg" alt="Tata Hexa">
+            <h3>Tata Hexa</h3>
+            <p>The Tata Hexa is a premium SUV with modern features and a high-performance engine, perfect for long trips.</p>
+        </div>
+        <div class="car">
+            <img src="mahindra-scorpio.jpg" alt="Mahindra Scorpio">
+            <h3>Mahindra Scorpio</h3>
+            <p>The Mahindra Scorpio is a bold SUV with great off-road capabilities and a robust build, ideal for adventure lovers.</p>
+        </div>
+    </div>
+
+    <table class="comparison-table">
+        <tr>
+            <th>Car</th>
+            <th>Engine</th>
+            <th>Power</th>
+            <th>Fuel Efficiency</th>
+            <th>Price Range</th>
+        </tr>
+        <tr>
+            <td>Chevy Cruze</td>
+            <td>1.4L Turbo</td>
+            <td>153 hp</td>
+            <td>16-18 km/l</td>
+            <td>₹15-17 Lakhs</td>
+        </tr>
+        <tr>
+            <td>Tata Safari</td>
+            <td>2.0L Diesel</td>
+            <td>170 hp</td>
+            <td>14-16 km/l</td>
+            <td>₹22-25 Lakhs</td>
+        </tr>
+        <tr>
+            <td>Tata Storme</td>
+            <td>2.2L Diesel</td>
+            <td>154 hp</td>
+            <td>13-15 km/l</td>
+            <td>₹12-16 Lakhs</td>
+        </tr>
+        <tr>
+            <td>Tata Hexa</td>
+            <td>2.2L Diesel</td>
+            <td>156 hp</td>
+            <td>14-16 km/l</td>
+            <td>₹15-18 Lakhs</td>
+        </tr>
+        <tr>
+            <td>Mahindra Scorpio</td>
+            <td>2.2L mHawk Diesel</td>
+            <td>140 hp</td>
+            <td>14-16 km/l</td>
+            <td>₹12-18 Lakhs</td>
+        </tr>
+    </table>
+
+</body>
+</html>
